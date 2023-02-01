@@ -1,0 +1,36 @@
+#sky {
+ background-color: rgb(151, 217, 255);
+ width: 1500px;
+ height: 700px;
+}
+
+#ball {
+ background-color: crimson;
+ border-radius: 50%;
+ width: 100px;
+ height: 100px;
+}
+
+hr {
+ border: 5px solid rgb(58, 56, 56);
+ width: 92px;
+ margin: 0px;
+}
+
+#sky:hover #ball {
+ transition-property: all;
+ transition-duration: 20s;
+ transition-timing-function: linear;
+
+ animation-name: falling;
+ animation-iteration-count: 1;
+}
+
+
+@keyframes falling {
+
+ 100% {
+  transform: translateX(800px);
+
+ }
+}
