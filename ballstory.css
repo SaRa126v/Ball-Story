@@ -18,9 +18,8 @@ hr {
 }
 
 #sky:hover #ball {
- transition-property: all;
- transition-duration: 20s;
- transition-timing-function: linear;
+ animation-duration: 20s;
+ animation-timing-function: linear;
 
  animation-name: falling;
  animation-iteration-count: 1;
@@ -29,8 +28,19 @@ hr {
 
 @keyframes falling {
 
- 100% {
-  transform: translateX(800px);
+ 10% {
+  transform: translateX(90px);
+ }
 
+ 20% {
+  transform: translateX(90px) translateY(500px);
+ }
+
+ 30% {
+  transform: translateX(300px);
+ }
+
+ 40% {
+  transform: translateY(-80px) translateX(300px) ; 
  }
 }
