@@ -1,4 +1,5 @@
 #sky {
+ margin: 10% auto;
  background-color: rgb(151, 217, 255);
  width: 1500px;
  height: 700px;
@@ -9,48 +10,59 @@
  border-radius: 50%;
  width: 100px;
  height: 100px;
+
 }
 
 hr {
  border: 5px solid rgb(58, 56, 56);
  width: 92px;
  margin: 0px;
+
 }
 
-#sky:hover #ball {
- animation-duration: 20s;
- animation-timing-function: linear;
-
- animation-name: falling;
- animation-iteration-count: 1;
+#sky:hover #ball { 
+ animation: falling 20s linear;
 }
 
 
 @keyframes falling {
 
+/* right */
  10% {
   transform: translateX(90px);
   width: 100px;
  height: 100px;
  }
 
+ /* down */
  20% {
-  transform: translate(90px , 600px);
+  transform: translate(90px, 600px);
   width: 60px;
  height: 100px;
  }
 
+ /* up  problem*/
+ 
  30% {
-  transform: translateX(400px);
+  transform: translate(90px ,-100px);
   height: 50px;
  }
 
+ /* right*/
+ 35% {
+ transform: translateX(180px);
+ width: 100px;
+height: 100px;
+}
+
+/* down */
  40% {
-  transform: translateY(400px , -50px);
-  width: 60px;
-  height: 100px;
+  transform: translate(400px , 600px);
+ width: 70px;
+height: 100px;
  }
 
+/*
  50% {
   transform: translate(400px , 600px ) ; 
   width: 60px;
@@ -59,6 +71,6 @@ hr {
 
  60% {
   transform:  translateX(600px) ; 
- }
+ } */
 
 }
