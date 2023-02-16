@@ -24,7 +24,7 @@
    }
    
    #sky:hover #ball {
-    animation: falling 40s linear forwards;
+    animation: falling 20s linear forwards;
    }
    
    @keyframes falling {
